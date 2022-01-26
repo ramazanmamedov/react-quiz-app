@@ -47,7 +47,7 @@ class Quiz extends Component {
         const results = this.state.results;
 
         if (question.rightAnswerId === answerId) {
-            if (!results[answerId]){
+            if (!results[question.id]){
                 results[question.id] = 'success'
             }
             this.setState({
